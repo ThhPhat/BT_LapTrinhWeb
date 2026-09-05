@@ -13,7 +13,7 @@ public class Constant {
     public static final String COOKIE_REMEMBER = "username";
 
     public static final int PAGE_SIZE = 5;          // phân trang cho Category (admin)
-    public static final int PRODUCT_PAGE_SIZE = 8;  // phân trang cho trang /product (6 sp/trang)
+    public static final int PRODUCT_PAGE_SIZE = 6;  // phân trang cho trang /product (6 sp/trang)
     public static final int LATEST_PRODUCT_COUNT = 10; // số sản phẩm mới nhất hiển thị ở trang chủ
 
     // OTP
