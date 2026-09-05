@@ -13,7 +13,7 @@ public class Constant {
     public static final String COOKIE_REMEMBER = "username";
 
     public static final int PAGE_SIZE = 5;          // phân trang cho Category (admin)
-    public static final int PRODUCT_PAGE_SIZE = 6;  // phân trang cho trang /product (6 sp/trang)
+    public static final int PRODUCT_PAGE_SIZE = 8;  // phân trang cho trang /product (6 sp/trang)
     public static final int LATEST_PRODUCT_COUNT = 10; // số sản phẩm mới nhất hiển thị ở trang chủ
 
     // OTP
@@ -26,8 +26,8 @@ public class Constant {
     // rồi dán vào đây (KHÔNG dùng mật khẩu Gmail thường).
     public static final String MAIL_HOST = "smtp.gmail.com";
     public static final String MAIL_PORT = "587";
-    public static final String MAIL_USERNAME = "your-email@gmail.com";
-    public static final String MAIL_PASSWORD = "your-app-password";
+    public static final String MAIL_USERNAME = "thanhphat.wqe@gmail.com";
+    public static final String MAIL_PASSWORD = "rndymeinvvpyrhbk";
     public static final String MAIL_FROM_NAME = "ServletCRUDMVC";
 
     public static class Path {

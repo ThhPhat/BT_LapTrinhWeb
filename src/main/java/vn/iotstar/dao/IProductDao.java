@@ -12,6 +12,8 @@ public interface IProductDao {
     List<Product> findLatest(int limit);
     List<Product> findAll(int page, int pagesize);
     List<Product> search(String keyword, int page, int pagesize);
+    List<Product> findByCategory(int categoryId, int page, int pagesize);
+    int countByCategory(int categoryId);
     int count();
     int countByKeyword(String keyword);
 }

@@ -158,4 +158,34 @@ public class ProductDao implements IProductDao {
             em.close();
         }
     }
+
+    @Override
+    public List<Product> findByCategory(int categoryId, int page, int pagesize) {
+        EntityManager em = JPAUtil.getEntityManager();
+        try {
+            return em.createQuery(
+                    "SELECT p FROM Product p WHERE p.category.id = :cid ORDER BY p.id DESC", Product.class)
+                    .setParameter("cid", categoryId)
+                    .setFirstResult(page * pagesize)
+                    .setMaxResults(pagesize)
+                    .getResultList();
+        } finally {
+            em.close();
+        }
+    }
+
+    @Override
+    public int countByCategory(int categoryId) {
+        EntityManager em = JPAUtil.getEntityManager();
+        try {
+            return em.createQuery(
+                    "SELECT COUNT(p) FROM Product p WHERE p.category.id = :cid", Long.class)
+                    .setParameter("cid", categoryId)
+                    .getSingleResult()
+                    .intValue();
+        } finally {
+            em.close();
+        }
+    }
+
 }

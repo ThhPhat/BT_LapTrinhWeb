@@ -60,4 +60,12 @@ public class ProductServiceImpl implements IProductService {
     public int countByKeyword(String keyword) {
         return productDao.countByKeyword(keyword);
     }
+    @Override
+    public List<Product> findByCategory(int categoryId, int page, int pagesize) {
+        return productDao.findByCategory(categoryId, page, pagesize);
+    }
+    @Override
+    public int countByCategory(int categoryId) {
+        return productDao.countByCategory(categoryId);
+    }
 }
