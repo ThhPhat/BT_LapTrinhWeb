@@ -93,15 +93,3 @@ Truy cập: `http://localhost:8080/ServletCRUDMVC/`
 - **Trang chủ / danh sách / chi tiết sản phẩm**: `/home`, `/product`,
   `/product/detail?id=1`.
 
-## 7. Đưa source code lên GitHub
-
-```bash
-git init
-git add .
-git commit -m "ServletCRUDMVC - JPA, OTP email, Product CRUD"
-git branch -M main
-git remote add origin https://github.com/<username>/<ten-repo>.git
-git push -u origin main
-```
-
-Sau đó nộp đường link repo GitHub tại UTEXLMS.
